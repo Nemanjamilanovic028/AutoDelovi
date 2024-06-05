@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/06/05 15:42:42.000.300,=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/05 15:42:55.000.424,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.fmx</Transaction>
+    <Transaction>2024/06/05 15:42:55.000.424,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.pas</Transaction>
+    <Transaction>2024/06/05 15:43:05.000.704,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.pas=C:\Users\nikol\AutoPlac\AutoDelovi\login.pas</Transaction>
+    <Transaction>2024/06/05 15:43:05.000.704,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\login.fmx</Transaction>
+    <Transaction>2024/06/05 15:43:18.000.799,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\nikol\AutoPlac\AutoDelovi\AutoDelovi.dproj</Transaction>
+    <Transaction>2024/06/05 15:53:41.000.585,=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
+    <Transaction>2024/06/05 15:53:45.000.673,C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\dm.fmx</Transaction>
+    <Transaction>2024/06/05 15:53:45.000.673,C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas=C:\Users\nikol\AutoPlac\AutoDelovi\dm.pas</Transaction>
+    <Transaction>2024/06/05 15:59:08.000.000,=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
+    <Transaction>2024/06/05 15:59:12.000.185,C:\Users\nikol\AutoPlac\AutoDelovi\meni.pas=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
+    <Transaction>2024/06/05 15:59:12.000.185,C:\Users\nikol\AutoPlac\AutoDelovi\meni.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.fmx</Transaction>
+    <Transaction>2024/06/05 16:00:25.000.005,=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
+    <Transaction>2024/06/05 16:00:29.000.882,C:\Users\nikol\AutoPlac\AutoDelovi\register.pas=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
+    <Transaction>2024/06/05 16:00:29.000.882,C:\Users\nikol\AutoPlac\AutoDelovi\register.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.fmx</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,128 @@
+object formLogin: TformLogin
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 527
+  ClientWidth = 637
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Size.Width = 637.000000000000000000
+    Size.Height = 527.000000000000000000
+    Size.PlatformDefault = False
+    object bot: TLayout
+      Align = Bottom
+      Position.Y = 431.000000000000000000
+      Size.Width = 637.000000000000000000
+      Size.Height = 96.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object buttonLogin: TButton
+        Align = Center
+        Size.Width = 99.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Prijavi se!'
+        TextSettings.Trimming = None
+        OnClick = buttonLoginClick
+      end
+    end
+    object top: TLayout
+      Align = Top
+      Size.Width = 637.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Text1: TText
+        Align = Center
+        Size.Width = 105.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Auto Delovi'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00090000000000000004000000}
+      end
+    end
+    object client: TLayout
+      Align = Client
+      Size.Width = 637.000000000000000000
+      Size.Height = 326.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Text2: TText
+        Align = Center
+        Margins.Bottom = 100.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Email:'
+      end
+      object Text3: TText
+        Align = Center
+        Margins.Bottom = 200.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Prijavi se!'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      object Layout1: TLayout
+        Align = Center
+        Margins.Bottom = 60.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object editEmail: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 0
+          Size.Width = 145.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Text4: TText
+        Align = Center
+        Size.Width = 90.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = #352'ifra:'
+      end
+      object Layout2: TLayout
+        Align = Center
+        Margins.Top = 40.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object editSifra: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 0
+          Password = True
+          Size.Width = 145.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object buttonRegister: TButton
+        Align = Center
+        StyledSettings = [Family, FontColor]
+        Margins.Top = 200.000000000000000000
+        StyleLookup = 'toolbuttonleft'
+        TabOrder = 5
+        Text = 'Registruj se!'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.Trimming = None
+        OnClick = buttonRegisterClick
+      end
+    end
+  end
+end
