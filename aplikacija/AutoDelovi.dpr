@@ -6,7 +6,11 @@ uses
   login in 'login.pas' {formLogin},
   dm in 'dm.pas' {db},
   meni in 'meni.pas' {formMeni},
-  register in 'register.pas' {formRegister};
+  register in 'register.pas' {formRegister},
+  meni2 in 'meni2.pas' {formMeni2},
+  detalji in 'detalji.pas' {formDetalji},
+  korpa in 'korpa.pas' {formKorpa},
+  nalog in 'nalog.pas' {formNalog};
 
 {$R *.res}
 
@@ -16,5 +20,9 @@ begin
   Application.CreateForm(Tdb, db);
   Application.CreateForm(TformMeni, formMeni);
   Application.CreateForm(TformRegister, formRegister);
+  Application.CreateForm(TformMeni2, formMeni2);
+  Application.CreateForm(TformDetalji, formDetalji);
+  Application.CreateForm(TformKorpa, formKorpa);
+  Application.CreateForm(TformNalog, formNalog);
   Application.Run;
 end.

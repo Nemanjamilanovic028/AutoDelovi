@@ -11,8 +11,9 @@ object db: Tdb
   object dbAutoDelovi: TFDConnection
     Params.Strings = (
       'DriverID=SQLite'
-      'Database=C:\Users\nikol\AutoPlac\AutoDelovi\sqlite.db')
-    Connected = True
+      
+        'Database=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\sqlit' +
+        'e.db')
     LoginPrompt = False
     Left = 160
     Top = 144

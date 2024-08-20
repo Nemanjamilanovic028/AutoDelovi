@@ -1,39 +1,39 @@
-object formMeni: TformMeni
+object formDetalji: TformDetalji
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 588
-  ClientWidth = 474
+  ClientHeight = 690
+  ClientWidth = 538
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Rectangle1: TRectangle
     Align = Client
-    Size.Width = 474.000000000000000000
-    Size.Height = 588.000000000000000000
+    Size.Width = 538.000000000000000000
+    Size.Height = 690.000000000000000000
     Size.PlatformDefault = False
     object bot: TLayout
       Align = Bottom
-      Position.Y = 544.000000000000000000
-      Size.Width = 474.000000000000000000
+      Position.Y = 646.000000000000000000
+      Size.Width = 538.000000000000000000
       Size.Height = 44.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
-      object buttonPrikazi: TButton
+      object buttonDodajUKorpu: TButton
         Align = Center
-        Size.Width = 80.000000000000000000
+        Size.Width = 101.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        Text = 'Prikazi'
+        Text = 'Dodaj u korpu'
         TextSettings.Trimming = None
-        OnClick = buttonPrikaziClick
+        OnClick = buttonDodajUKorpuClick
       end
     end
     object top: TLayout
       Align = Top
-      Size.Width = 474.000000000000000000
+      Size.Width = 538.000000000000000000
       Size.Height = 73.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
@@ -349,7 +349,7 @@ object formMeni: TformMeni
           end>
         Align = Right
         Margins.Right = 25.000000000000000000
-        Position.X = 409.000000000000000000
+        Position.X = 473.000000000000000000
         Size.Width = 40.000000000000000000
         Size.Height = 73.000000000000000000
         Size.PlatformDefault = False
@@ -358,20 +358,20 @@ object formMeni: TformMeni
     end
     object client: TLayout
       Align = Client
-      Size.Width = 474.000000000000000000
-      Size.Height = 471.000000000000000000
+      Size.Width = 538.000000000000000000
+      Size.Height = 573.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       object Rectangle2: TRectangle
         Align = Top
         Fill.Color = xFFE5FFFF
-        Size.Width = 474.000000000000000000
+        Size.Width = 538.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         object buttonAkumulatori: TButton
           Align = HorzCenter
           StyledSettings = [Family, Size, FontColor]
-          Position.X = 176.000000000000000000
+          Position.X = 208.000000000000000000
           Size.Width = 122.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
@@ -380,7 +380,6 @@ object formMeni: TformMeni
           Text = 'Akumulatori'
           TextSettings.Font.StyleExt = {00070000000000000004000000}
           TextSettings.Trimming = None
-          OnClick = buttonAkumulatoriClick
         end
         object butonSviDelovi: TButton
           Align = Left
@@ -397,7 +396,7 @@ object formMeni: TformMeni
         object buttonGume: TButton
           Align = Right
           StyledSettings = [Family, Size, FontColor]
-          Position.X = 352.000000000000000000
+          Position.X = 416.000000000000000000
           Size.Width = 122.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
@@ -408,18 +407,60 @@ object formMeni: TformMeni
           TextSettings.Trimming = None
         end
       end
-      object ListBox1: TListBox
+      object labelBrend: TLabel
         Align = Center
-        Size.Width = 380.000000000000000000
-        Size.Height = 374.000000000000000000
+        Margins.Bottom = 50.000000000000000000
+        Size.Width = 520.000000000000000000
+        Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
+        Text = 'Brend:'
+        TabOrder = 3
+      end
+      object labelIme: TLabel
+        Align = Center
+        Margins.Bottom = 250.000000000000000000
+        Size.Width = 520.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Akumulator'
+        TabOrder = 4
+      end
+      object labelCena: TLabel
+        Align = Center
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Bottom = 150.000000000000000000
+        Size.Width = 520.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 18.000000000000000000
+        Text = 'Cena:'
+        TabOrder = 5
+      end
+      object labelJedinica: TLabel
+        Align = Center
+        Size.Width = 520.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Jedinica mere: '
+        TabOrder = 2
+      end
+      object labelStatus: TLabel
+        Align = Center
+        Margins.Top = 50.000000000000000000
+        Size.Width = 520.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Status'
+        TabOrder = 1
+      end
+      object labelRok: TLabel
+        Align = Center
+        Margins.Top = 100.000000000000000000
+        Size.Width = 520.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Rok isporuke: '
         TabOrder = 0
-        DisableFocusEffect = True
-        DefaultItemStyles.ItemStyle = ''
-        DefaultItemStyles.GroupHeaderStyle = ''
-        DefaultItemStyles.GroupFooterStyle = ''
-        Viewport.Width = 376.000000000000000000
-        Viewport.Height = 370.000000000000000000
       end
     end
   end

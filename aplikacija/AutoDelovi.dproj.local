@@ -2,19 +2,35 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2024/06/05 15:42:42.000.300,=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/06/05 15:42:55.000.424,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.fmx</Transaction>
-    <Transaction>2024/06/05 15:42:55.000.424,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.pas</Transaction>
-    <Transaction>2024/06/05 15:43:05.000.704,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.pas=C:\Users\nikol\AutoPlac\AutoDelovi\login.pas</Transaction>
-    <Transaction>2024/06/05 15:43:05.000.704,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\login.fmx</Transaction>
-    <Transaction>2024/06/05 15:43:18.000.799,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\nikol\AutoPlac\AutoDelovi\AutoDelovi.dproj</Transaction>
+    <Transaction>2024/06/05 15:42:55.000.424,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.fmx=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2024/06/05 15:42:55.000.424,C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.pas=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/05 15:43:05.000.704,C:\Users\nikol\AutoPlac\AutoDelovi\login.fmx=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.fmx</Transaction>
+    <Transaction>2024/06/05 15:43:05.000.704,C:\Users\nikol\AutoPlac\AutoDelovi\login.pas=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\login.pas</Transaction>
+    <Transaction>2024/06/05 15:43:18.000.799,C:\Users\nikol\AutoPlac\AutoDelovi\AutoDelovi.dproj=C:\Users\nikol\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2024/06/05 15:53:41.000.585,=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
-    <Transaction>2024/06/05 15:53:45.000.673,C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\dm.fmx</Transaction>
-    <Transaction>2024/06/05 15:53:45.000.673,C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas=C:\Users\nikol\AutoPlac\AutoDelovi\dm.pas</Transaction>
+    <Transaction>2024/06/05 15:53:45.000.673,C:\Users\nikol\AutoPlac\AutoDelovi\dm.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.fmx</Transaction>
+    <Transaction>2024/06/05 15:53:45.000.673,C:\Users\nikol\AutoPlac\AutoDelovi\dm.pas=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
     <Transaction>2024/06/05 15:59:08.000.000,=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
-    <Transaction>2024/06/05 15:59:12.000.185,C:\Users\nikol\AutoPlac\AutoDelovi\meni.pas=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
-    <Transaction>2024/06/05 15:59:12.000.185,C:\Users\nikol\AutoPlac\AutoDelovi\meni.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.fmx</Transaction>
+    <Transaction>2024/06/05 15:59:12.000.185,C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\meni.fmx</Transaction>
+    <Transaction>2024/06/05 15:59:12.000.185,C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas=C:\Users\nikol\AutoPlac\AutoDelovi\meni.pas</Transaction>
     <Transaction>2024/06/05 16:00:25.000.005,=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
-    <Transaction>2024/06/05 16:00:29.000.882,C:\Users\nikol\AutoPlac\AutoDelovi\register.pas=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas</Transaction>
-    <Transaction>2024/06/05 16:00:29.000.882,C:\Users\nikol\AutoPlac\AutoDelovi\register.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.fmx</Transaction>
+    <Transaction>2024/06/05 16:00:29.000.882,C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.pas=C:\Users\nikol\AutoPlac\AutoDelovi\register.pas</Transaction>
+    <Transaction>2024/06/05 16:00:29.000.882,C:\Users\nikol\AutoPlac\AutoDelovi\Unit1.fmx=C:\Users\nikol\AutoPlac\AutoDelovi\register.fmx</Transaction>
+    <Transaction>2024/08/07 20:03:48.000.927,=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/07 20:03:56.000.745,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\meni2.fmx=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.fmx</Transaction>
+    <Transaction>2024/08/07 20:03:56.000.745,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\meni2.pas=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/09 20:05:06.000.988,=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/09 20:05:11.000.994,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\detalji.pas=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/09 20:05:11.000.994,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\detalji.fmx=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.fmx</Transaction>
+    <Transaction>2024/08/16 13:12:24.000.841,=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/16 13:12:30.000.797,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.fmx=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.fmx</Transaction>
+    <Transaction>2024/08/16 13:12:30.000.797,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.pas</Transaction>
+    <Transaction>2024/08/20 12:28:10.779,=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/20 12:28:17.948,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.pas=</Transaction>
+    <Transaction>2024/08/20 12:28:24.356,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.fmx=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.fmx</Transaction>
+    <Transaction>2024/08/20 12:28:24.356,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.pas=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/20 12:50:43.417,=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/20 12:50:47.575,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\nalog.fmx=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.fmx</Transaction>
+    <Transaction>2024/08/20 12:50:47.575,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\nalog.pas=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

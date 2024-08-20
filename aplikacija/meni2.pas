@@ -1,4 +1,4 @@
-﻿unit meni;
+﻿unit meni2;
 
 interface
 
@@ -8,7 +8,7 @@ uses
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, FMX.ListBox;
 
 type
-  TformMeni = class(TForm)
+  TformMeni2 = class(TForm)
     Rectangle1: TRectangle;
     bot: TLayout;
     top: TLayout;
@@ -25,7 +25,6 @@ type
     procedure buttonNazadClick(Sender: TObject);
     procedure buttonPrikaziClick(Sender: TObject);
     procedure ListBox1Change(Sender: TObject);
-    procedure buttonAkumulatoriClick(Sender: TObject);
     procedure Image1Click(Sender: TObject);
   private
     { Private declarations }
@@ -34,31 +33,25 @@ type
   end;
 
 var
-  formMeni: TformMeni;
+  formMeni2: TformMeni2;
 
 implementation
 
-uses login, dm, meni2, nalog;
+uses login, dm, meni, detalji, nalog;
 
 {$R *.fmx}
 
-procedure TformMeni.buttonAkumulatoriClick(Sender: TObject);
+procedure TformMeni2.buttonNazadClick(Sender: TObject);
 begin
-    formMeni.hide;
-    formMeni2.show;
+  formMeni2.Hide;
+  formmeni.Show;
 end;
 
-procedure TformMeni.buttonNazadClick(Sender: TObject);
-begin
-  formMeni.Hide;
-  formLogin.Show;
-end;
-
-procedure TformMeni.buttonPrikaziClick(Sender: TObject);
+procedure TformMeni2.buttonPrikaziClick(Sender: TObject);
 begin
   with dm.db do
   begin
-    qtemp.SQL.Text := 'SELECT * FROM delovi';
+    qtemp.SQL.Text := 'SELECT * FROM akumulatori';
     qtemp.Open;
 
     // Prikaz delova koji su pronađeni
@@ -67,7 +60,7 @@ begin
       ListBox1.Clear;
       while not qtemp.Eof do
       begin
-        ListBox1.Items.Add(qtemp.FieldByName('ime').AsString);
+        ListBox1.Items.Add(qtemp.FieldByName('brend').AsString + ' ' + qtemp.FieldByName('ime').AsString);
         qtemp.Next;
       end;
       // Omogućavanje korisniku da klikne na stavku u ListBox-u
@@ -84,41 +77,61 @@ begin
   end;
 end;
 
-procedure TformMeni.Image1Click(Sender: TObject);
+procedure TformMeni2.Image1Click(Sender: TObject);
 begin
-    formMeni.hide;
+    formMeni2.hide;
     formNalog.show;
 end;
 
-procedure TformMeni.ListBox1Change(Sender: TObject);
+procedure TformMeni2.ListBox1Change(Sender: TObject);
 var
-  selectedPartName: string;
-  description: string;
+  selectedPartName, brend, ime, cena, jedinica, status, rok: string;
 begin
   if ListBox1.ItemIndex <> -1 then
   begin
     selectedPartName := ListBox1.Items[ListBox1.ItemIndex];
 
+    // Pretpostavljamo da selectedPartName sadrži "Brend Ime"
+    brend := Copy(selectedPartName, 1, Pos(' ', selectedPartName) - 1);
+    ime := Copy(selectedPartName, Pos(' ', selectedPartName) + 1, Length(selectedPartName));
+
     with dm.db do
     begin
-      qtemp.SQL.Text := 'SELECT opis FROM delovi WHERE ime = :ime';
-      qtemp.ParamByName('ime').AsString := selectedPartName;
+      qtemp.SQL.Text := 'SELECT brend, ime, cena, jedinicaMere, status, rokIsporuke FROM akumulatori WHERE brend = :brend AND ime = :ime';
+      qtemp.ParamByName('brend').AsString := brend;
+      qtemp.ParamByName('ime').AsString := ime;
       qtemp.Open;
 
       if not qtemp.IsEmpty then
       begin
-        description := qtemp.FieldByName('opis').AsString;
-        ShowMessage(Format('%s: ' + sLineBreak + '%s', [selectedPartName, description]));
+        brend := qtemp.FieldByName('brend').AsString;
+        ime := qtemp.FieldByName('ime').AsString;
+        cena := qtemp.FieldByName('cena').AsString;
+        jedinica := qtemp.FieldByName('jedinicaMere').AsString;
+        status := qtemp.FieldByName('status').AsString;
+        rok := qtemp.FieldByName('rokIsporuke').AsString;
+
+        formMeni2.Hide;
+
+        // Otvaranje forme sa detaljima
+        if not Assigned(formDetalji) then
+          Application.CreateForm(TformDetalji, formDetalji);
+
+        formDetalji.PrikaziDetalje(brend, ime, cena, jedinica, status, rok);
+        formDetalji.ShowModal;
       end
       else
       begin
-        ShowMessage('Nema opisa za izabranu stavku.');
+        ShowMessage('Nema podataka za izabranu stavku.');
       end;
 
       qtemp.Close;
     end;
   end;
 end;
+
+
+
 
 end.
 

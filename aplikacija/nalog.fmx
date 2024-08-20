@@ -1,39 +1,39 @@
-object formMeni: TformMeni
+object formNalog: TformNalog
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 588
-  ClientWidth = 474
+  ClientHeight = 714
+  ClientWidth = 657
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Rectangle1: TRectangle
     Align = Client
-    Size.Width = 474.000000000000000000
-    Size.Height = 588.000000000000000000
+    Size.Width = 657.000000000000000000
+    Size.Height = 714.000000000000000000
     Size.PlatformDefault = False
     object bot: TLayout
       Align = Bottom
-      Position.Y = 544.000000000000000000
-      Size.Width = 474.000000000000000000
-      Size.Height = 44.000000000000000000
+      Position.Y = 592.000000000000000000
+      Size.Width = 657.000000000000000000
+      Size.Height = 122.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
-      object buttonPrikazi: TButton
+      object buttonNaruciPosiljku: TButton
         Align = Center
-        Size.Width = 80.000000000000000000
+        Size.Width = 101.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        Text = 'Prikazi'
+        Text = 'Odjavi se'
         TextSettings.Trimming = None
-        OnClick = buttonPrikaziClick
+        OnClick = buttonNaruciPosiljkuClick
       end
     end
     object top: TLayout
       Align = Top
-      Size.Width = 474.000000000000000000
+      Size.Width = 657.000000000000000000
       Size.Height = 73.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
@@ -53,9 +53,16 @@ object formMeni: TformMeni
         Size.Width = 249.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
-        Text = 'Izaberite odredjeni artikal!'
+        Text = 'PROFIL'
         TextSettings.Font.Size = 20.000000000000000000
       end
+    end
+    object client: TLayout
+      Align = Client
+      Size.Width = 657.000000000000000000
+      Size.Height = 519.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
       object Image1: TImage
         MultiResBitmap.Height = 512
         MultiResBitmap.Width = 448
@@ -347,79 +354,47 @@ object formMeni: TformMeni
               6082}
             FileName = 'C:\Users\nikol\Downloads\user-solid.png'
           end>
-        Align = Right
-        Margins.Right = 25.000000000000000000
-        Position.X = 409.000000000000000000
-        Size.Width = 40.000000000000000000
-        Size.Height = 73.000000000000000000
-        Size.PlatformDefault = False
-        OnClick = Image1Click
-      end
-    end
-    object client: TLayout
-      Align = Client
-      Size.Width = 474.000000000000000000
-      Size.Height = 471.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 0
-      object Rectangle2: TRectangle
-        Align = Top
-        Fill.Color = xFFE5FFFF
-        Size.Width = 474.000000000000000000
-        Size.Height = 50.000000000000000000
-        Size.PlatformDefault = False
-        object buttonAkumulatori: TButton
-          Align = HorzCenter
-          StyledSettings = [Family, Size, FontColor]
-          Position.X = 176.000000000000000000
-          Size.Width = 122.000000000000000000
-          Size.Height = 50.000000000000000000
-          Size.PlatformDefault = False
-          StyleLookup = 'toolbuttonright'
-          TabOrder = 2
-          Text = 'Akumulatori'
-          TextSettings.Font.StyleExt = {00070000000000000004000000}
-          TextSettings.Trimming = None
-          OnClick = buttonAkumulatoriClick
-        end
-        object butonSviDelovi: TButton
-          Align = Left
-          StyledSettings = [Family, Size, FontColor]
-          Size.Width = 122.000000000000000000
-          Size.Height = 50.000000000000000000
-          Size.PlatformDefault = False
-          StyleLookup = 'toolbuttonright'
-          TabOrder = 1
-          Text = 'Svi delovi'
-          TextSettings.Font.StyleExt = {00070000000000000004000000}
-          TextSettings.Trimming = None
-        end
-        object buttonGume: TButton
-          Align = Right
-          StyledSettings = [Family, Size, FontColor]
-          Position.X = 352.000000000000000000
-          Size.Width = 122.000000000000000000
-          Size.Height = 50.000000000000000000
-          Size.PlatformDefault = False
-          StyleLookup = 'toolbuttonright'
-          TabOrder = 0
-          Text = 'Gume'
-          TextSettings.Font.StyleExt = {00070000000000000004000000}
-          TextSettings.Trimming = None
-        end
-      end
-      object ListBox1: TListBox
         Align = Center
-        Size.Width = 380.000000000000000000
-        Size.Height = 374.000000000000000000
+        Margins.Bottom = 400.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 51.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 0
-        DisableFocusEffect = True
-        DefaultItemStyles.ItemStyle = ''
-        DefaultItemStyles.GroupHeaderStyle = ''
-        DefaultItemStyles.GroupFooterStyle = ''
-        Viewport.Width = 376.000000000000000000
-        Viewport.Height = 370.000000000000000000
+      end
+      object textIme: TText
+        Align = Center
+        Margins.Bottom = 200.000000000000000000
+        Size.Width = 417.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Ime:'
+        TextSettings.HorzAlign = Leading
+      end
+      object textPrezime: TText
+        Align = Center
+        Margins.Bottom = 150.000000000000000000
+        Size.Width = 417.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Prezime:'
+        TextSettings.HorzAlign = Leading
+      end
+      object textSifra: TText
+        Align = Center
+        Margins.Bottom = 50.000000000000000000
+        Size.Width = 417.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Sifra:'
+        TextSettings.HorzAlign = Leading
+      end
+      object textEmail: TText
+        Align = Center
+        Margins.Bottom = 100.000000000000000000
+        Size.Width = 417.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Email:'
+        TextSettings.HorzAlign = Leading
       end
     end
   end

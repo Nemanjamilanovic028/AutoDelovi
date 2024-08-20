@@ -142,6 +142,22 @@
             <Form>formRegister</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="meni2.pas">
+            <Form>formMeni2</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="detalji.pas">
+            <Form>formDetalji</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="korpa.pas">
+            <Form>formKorpa</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="nalog.pas">
+            <Form>formNalog</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
