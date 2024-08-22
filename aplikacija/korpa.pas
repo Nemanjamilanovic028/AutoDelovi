@@ -1,4 +1,4 @@
-unit korpa;
+﻿unit korpa;
 
 interface
 
@@ -31,6 +31,7 @@ type
     procedure ButtonPrikaziKorpuClick(Sender: TObject);
     procedure Image1Click(Sender: TObject);
     procedure buttonNazadClick(Sender: TObject);
+    procedure buttonNaruciPosiljkuClick(Sender: TObject);
   private
     FItems: TList<TArtikalUKorpi>;
   public
@@ -46,7 +47,7 @@ var
 
 implementation
 
-uses nalog, meni;
+uses nalog, meni,dm, login, meni;
 
 {$R *.fmx}
 
@@ -94,6 +95,47 @@ begin
     ArtikliList.Free;
   end;
 end;
+
+procedure TformKorpa.buttonNaruciPosiljkuClick(Sender: TObject);
+var
+  Artikal: TArtikalUKorpi;
+  Total: Currency;
+  Email: string;
+begin
+  Total := 0;
+
+  // Prolazak kroz sve artikle u korpi i računanje ukupne cene
+  for Artikal in FItems do
+  begin
+    Total := Total + (Artikal.Cena * Artikal.Kolicina);
+
+    // Ubacivanje svakog artikla u tabelu "posiljke"
+    with db.qtemp do
+    begin
+      SQL.Text := 'INSERT INTO posiljke (email, brend, ime, cena, jedinica_mere, kolicina, ukupna_cena) ' +
+                  'VALUES (:email, :brend, :ime, :cena, :jedinica_mere, :kolicina, :ukupna_cena)';
+      ParamByName('email').AsString := formLogin.editEmail.Text;  // Email korisnika iz forme login
+      ParamByName('brend').AsString := Artikal.Brend;
+      ParamByName('ime').AsString := Artikal.Ime;
+      ParamByName('cena').AsFloat := Artikal.Cena;
+      ParamByName('jedinica_mere').AsString := Artikal.JedinicaMere;
+      ParamByName('kolicina').AsInteger := Artikal.Kolicina;
+      ParamByName('ukupna_cena').AsFloat := Artikal.Cena * Artikal.Kolicina;
+      ExecSQL;
+    end;
+  end;
+
+  // Pokaži poruku da je narudžba uspešno kreirana
+  ShowMessage('Vaša narudžba je uspešno kreirana!');
+
+  // Očisti korpu
+  FItems.Clear;
+
+  // Vrati se na glavni meni ili otvori formu nalog
+  formKorpa.Hide;
+  formMeni.Show;
+end;
+
 
 procedure TformKorpa.buttonNazadClick(Sender: TObject);
 begin

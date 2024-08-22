@@ -25,12 +25,12 @@
     <Transaction>2024/08/16 13:12:24.000.841,=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
     <Transaction>2024/08/16 13:12:30.000.797,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.fmx=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.fmx</Transaction>
     <Transaction>2024/08/16 13:12:30.000.797,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.pas</Transaction>
-    <Transaction>2024/08/20 12:28:10.779,=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
-    <Transaction>2024/08/20 12:28:17.948,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.pas=</Transaction>
-    <Transaction>2024/08/20 12:28:24.356,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.fmx=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.fmx</Transaction>
-    <Transaction>2024/08/20 12:28:24.356,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.pas=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
-    <Transaction>2024/08/20 12:50:43.417,=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
-    <Transaction>2024/08/20 12:50:47.575,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\nalog.fmx=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.fmx</Transaction>
-    <Transaction>2024/08/20 12:50:47.575,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\nalog.pas=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/20 12:28:10.000.779,=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/20 12:28:17.000.948,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.pas=</Transaction>
+    <Transaction>2024/08/20 12:28:24.000.356,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.fmx=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.fmx</Transaction>
+    <Transaction>2024/08/20 12:28:24.000.356,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\korpa.pas=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/20 12:50:43.000.417,=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
+    <Transaction>2024/08/20 12:50:47.000.575,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\nalog.fmx=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.fmx</Transaction>
+    <Transaction>2024/08/20 12:50:47.000.575,D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\nalog.pas=D:\rad\AutoDelovi-main\AutoDelovi-main\aplikacija\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

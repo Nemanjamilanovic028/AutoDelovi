@@ -36,60 +36,67 @@ var
 
 implementation
 
-uses dm,meni,register;
+uses dm, meni, register, nalog;
 
 {$R *.fmx}
 
 procedure TformLogin.buttonLoginClick(Sender: TObject);
-  var
-    pwd: string;
+var
+  pwd: string;
+begin
+  if Trim(editEmail.Text) = '' then
   begin
-    if Trim(editEmail.Text) = '' then
+    ShowMessage('Molimo unesite email!');
+    editEmail.SetFocus;
+  end
+  else if Trim(editSifra.Text) = '' then
+  begin
+    ShowMessage('Molimo unesite sifru!');
+    editSifra.SetFocus;
+  end
+  else
+  begin
+    // Validacija
+    with db do
     begin
-      Showmessage('Molimo unesite email!');
-      editEmail.SetFocus;
-    end
-    else if Trim(editSifra.Text) = '' then
-    begin
-      Showmessage('Molimo unesite sifru!');
-      editSifra.SetFocus;
-    end
-    else
-    begin
-      // Validacija
-      with db do
+      dbAutodelovi.Open;
+      qtemp.SQL.Clear;
+      qtemp.SQL.Text := 'SELECT * FROM korisnici WHERE email=' + QuotedStr(editEmail.Text);
+      qtemp.Open;
+      if qtemp.RecordCount = 0 then
       begin
-        dbAutodelovi.Open;
-        qtemp.SQL.Clear;
-        qtemp.SQL.Text := 'SELECT * FROM korisnici WHERE email=' + QuotedStr(editEmail.Text);
-        qtemp.Open;
-        if qtemp.RecordCount = 0 then
+        ShowMessage('Email ne postoji!');
+        editEmail.SetFocus;
+      end
+      else
+      begin
+        pwd := qtemp.FieldByName('sifra').AsString;
+        if pwd = editSifra.Text then
         begin
-          ShowMessage('Email ne postoji!');
-          editEmail.SetFocus;
+          // Prebacujemo podatke na formu za nalog
+          formNalog.textIme.Text := 'Ime: ' + qtemp.FieldByName('ime').AsString;
+          formNalog.textPrezime.Text := 'Prezime: ' + qtemp.FieldByName('prezime').AsString;
+          formNalog.textEmail.Text := 'Email: ' + qtemp.FieldByName('email').AsString;
+          formNalog.textSifra.Text := 'Šifra: ' + qtemp.FieldByName('sifra').AsString;
+
+          formLogin.Hide;
+          formMeni.Show;
         end
         else
         begin
-          pwd := qtemp.FieldByName('sifra').AsString;
-          if pwd = editSifra.Text then
-          begin
-
-            formLogin.Hide;
-            formMeni.Show;
-          end
-          else
-          begin
-            ShowMessage('Pogresna sifra!');
-            editSifra.SetFocus;
-          end;
+          ShowMessage('Pogrešna šifra!');
+          editSifra.SetFocus;
         end;
       end;
     end;
   end;
+end;
+
 procedure TformLogin.buttonRegisterClick(Sender: TObject);
 begin
-    formLogin.hide;
-    formRegister.show;
+  formLogin.Hide;
+  formRegister.Show;
 end;
 
 end.
+

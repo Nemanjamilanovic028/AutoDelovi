@@ -50,6 +50,7 @@ object formNalog: TformNalog
       end
       object Text1: TText
         Align = Center
+        Margins.Right = 80.000000000000000000
         Size.Width = 249.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
@@ -395,6 +396,17 @@ object formNalog: TformNalog
         Size.PlatformDefault = False
         Text = 'Email:'
         TextSettings.HorzAlign = Leading
+      end
+      object buttonPrikazi: TButton
+        Align = Bottom
+        Position.Y = 480.000000000000000000
+        Size.Width = 657.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toolbuttonright'
+        TabOrder = 0
+        Text = 'Prikazi'
+        TextSettings.Trimming = None
       end
     end
   end

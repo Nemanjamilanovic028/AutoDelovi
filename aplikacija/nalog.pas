@@ -1,4 +1,4 @@
-unit nalog;
+﻿unit nalog;
 
 interface
 
@@ -21,8 +21,10 @@ type
     textPrezime: TText;
     textSifra: TText;
     textEmail: TText;
+    buttonPrikazi: TButton;
     procedure buttonNaruciPosiljkuClick(Sender: TObject);
     procedure buttonNazadClick(Sender: TObject);
+    procedure buttonPrikaziClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,20 +36,27 @@ var
 
 implementation
 
-uses login, dm, meni;
+uses login, meni;
 
 {$R *.fmx}
 
+procedure TformNalog.buttonPrikaziClick(Sender: TObject);
+begin
+  // Ova procedura samo osigurava da su podaci prikazani, podaci su već prebačeni tokom logovanja
+  ShowMessage('Prikazani podaci korisnika.');
+end;
+
 procedure TformNalog.buttonNaruciPosiljkuClick(Sender: TObject);
 begin
-formNalog.hide;
-formlogin.show;
+  formNalog.Hide;
+  formLogin.Show;
 end;
 
 procedure TformNalog.buttonNazadClick(Sender: TObject);
 begin
-    formNalog.hide;
-    formMeni.show;
+  formNalog.Hide;
+  formMeni.Show;
 end;
 
 end.
+

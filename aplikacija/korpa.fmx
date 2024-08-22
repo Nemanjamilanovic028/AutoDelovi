@@ -28,6 +28,7 @@ object formKorpa: TformKorpa
         TabOrder = 0
         Text = 'Naruci posiljku'
         TextSettings.Trimming = None
+        OnClick = buttonNaruciPosiljkuClick
       end
     end
     object top: TLayout
