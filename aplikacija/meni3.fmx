@@ -1,22 +1,22 @@
-object formMeni2: TformMeni2
+object formMeni3: TformMeni3
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 592
-  ClientWidth = 511
+  ClientHeight = 571
+  ClientWidth = 578
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Rectangle1: TRectangle
     Align = Client
-    Size.Width = 511.000000000000000000
-    Size.Height = 592.000000000000000000
+    Size.Width = 578.000000000000000000
+    Size.Height = 571.000000000000000000
     Size.PlatformDefault = False
     object bot: TLayout
       Align = Bottom
-      Position.Y = 548.000000000000000000
-      Size.Width = 511.000000000000000000
+      Position.Y = 527.000000000000000000
+      Size.Width = 578.000000000000000000
       Size.Height = 44.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
@@ -33,7 +33,7 @@ object formMeni2: TformMeni2
     end
     object top: TLayout
       Align = Top
-      Size.Width = 511.000000000000000000
+      Size.Width = 578.000000000000000000
       Size.Height = 73.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
@@ -349,7 +349,7 @@ object formMeni2: TformMeni2
           end>
         Align = Right
         Margins.Right = 25.000000000000000000
-        Position.X = 446.000000000000000000
+        Position.X = 513.000000000000000000
         Size.Width = 40.000000000000000000
         Size.Height = 73.000000000000000000
         Size.PlatformDefault = False
@@ -358,20 +358,20 @@ object formMeni2: TformMeni2
     end
     object client: TLayout
       Align = Client
-      Size.Width = 511.000000000000000000
-      Size.Height = 475.000000000000000000
+      Size.Width = 578.000000000000000000
+      Size.Height = 454.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       object Rectangle2: TRectangle
         Align = Top
         Fill.Color = xFFE5FFFF
-        Size.Width = 511.000000000000000000
+        Size.Width = 578.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         object buttonAkumulatori: TButton
           Align = HorzCenter
           StyledSettings = [Family, Size, FontColor]
-          Position.X = 194.000000000000000000
+          Position.X = 228.000000000000000000
           Size.Width = 122.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
@@ -380,6 +380,7 @@ object formMeni2: TformMeni2
           Text = 'Akumulatori'
           TextSettings.Font.StyleExt = {00070000000000000004000000}
           TextSettings.Trimming = None
+          OnClick = buttonAkumulatoriClick
         end
         object butonSviDelovi: TButton
           Align = Left
@@ -397,7 +398,7 @@ object formMeni2: TformMeni2
         object buttonGume: TButton
           Align = Right
           StyledSettings = [Family, Size, FontColor]
-          Position.X = 389.000000000000000000
+          Position.X = 456.000000000000000000
           Size.Width = 122.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
@@ -406,7 +407,6 @@ object formMeni2: TformMeni2
           Text = 'Gume'
           TextSettings.Font.StyleExt = {00070000000000000004000000}
           TextSettings.Trimming = None
-          OnClick = buttonGumeClick
         end
       end
       object ListBox1: TListBox

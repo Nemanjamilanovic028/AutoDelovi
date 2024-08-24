@@ -1,33 +1,33 @@
-﻿unit meni2;
+﻿unit meni3;
 
 interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
-  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, FMX.ListBox;
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
+  FMX.ListBox, FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls;
 
 type
-  TformMeni2 = class(TForm)
+  TformMeni3 = class(TForm)
     Rectangle1: TRectangle;
     bot: TLayout;
+    buttonPrikazi: TButton;
     top: TLayout;
-    client: TLayout;
     buttonNazad: TButton;
     Text1: TText;
     Image1: TImage;
+    client: TLayout;
     Rectangle2: TRectangle;
     buttonAkumulatori: TButton;
     butonSviDelovi: TButton;
     buttonGume: TButton;
     ListBox1: TListBox;
-    buttonPrikazi: TButton;
     procedure buttonNazadClick(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
     procedure buttonPrikaziClick(Sender: TObject);
     procedure ListBox1Change(Sender: TObject);
-    procedure Image1Click(Sender: TObject);
     procedure butonSviDeloviClick(Sender: TObject);
-    procedure buttonGumeClick(Sender: TObject);
+    procedure buttonAkumulatoriClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,37 +35,37 @@ type
   end;
 
 var
-  formMeni2: TformMeni2;
+  formMeni3: TformMeni3;
 
 implementation
 
-uses login, dm, meni, detalji, nalog, meni3;
+uses meni, nalog, dm, detalji, meni2;
 
 {$R *.fmx}
 
-procedure TformMeni2.butonSviDeloviClick(Sender: TObject);
+procedure TformMeni3.butonSviDeloviClick(Sender: TObject);
 begin
-    formmeni2.hide;
+    formMeni3.hide;
     formMeni.show;
 end;
 
-procedure TformMeni2.buttonGumeClick(Sender: TObject);
+procedure TformMeni3.buttonAkumulatoriClick(Sender: TObject);
 begin
-    formMeni2.Hide;
-    formMeni3.show;
+    formMeni3.hide;
+    formMeni2.show;
 end;
 
-procedure TformMeni2.buttonNazadClick(Sender: TObject);
+procedure TformMeni3.buttonNazadClick(Sender: TObject);
 begin
-  formMeni2.Hide;
-  formmeni.Show;
+    formMeni3.Hide;
+    formMeni.show;
 end;
 
-procedure TformMeni2.buttonPrikaziClick(Sender: TObject);
+procedure TformMeni3.buttonPrikaziClick(Sender: TObject);
 begin
   with dm.db do
   begin
-    qtemp.SQL.Text := 'SELECT * FROM akumulatori';
+    qtemp.SQL.Text := 'SELECT * FROM gume';
     qtemp.Open;
 
     // Prikaz delova koji su pronađeni
@@ -91,13 +91,12 @@ begin
   end;
 end;
 
-procedure TformMeni2.Image1Click(Sender: TObject);
+procedure TformMeni3.Image1Click(Sender: TObject);
 begin
-    formMeni2.hide;
+    formMeni3.hide;
     formNalog.show;
 end;
-
-procedure TformMeni2.ListBox1Change(Sender: TObject);
+procedure TformMeni3.ListBox1Change(Sender: TObject);
 var
   selectedPartName, brend, ime, cena, jedinica, status, rok: string;
 begin
@@ -111,7 +110,7 @@ begin
 
     with dm.db do
     begin
-      qtemp.SQL.Text := 'SELECT brend, ime, cena, jedinicaMere, status, rokIsporuke FROM akumulatori WHERE brend = :brend AND ime = :ime';
+      qtemp.SQL.Text := 'SELECT brend, ime, cena, jedinicaMere, status, rokIsporuke FROM gume WHERE brend = :brend AND ime = :ime';
       qtemp.ParamByName('brend').AsString := brend;
       qtemp.ParamByName('ime').AsString := ime;
       qtemp.Open;
@@ -125,7 +124,7 @@ begin
         status := qtemp.FieldByName('status').AsString;
         rok := qtemp.FieldByName('rokIsporuke').AsString;
 
-        formMeni2.Hide;
+        formMeni3.Hide;
 
         // Otvaranje forme sa detaljima
         if not Assigned(formDetalji) then
@@ -145,7 +144,4 @@ begin
 end;
 
 
-
-
 end.
-

@@ -158,6 +158,10 @@
             <Form>formNalog</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="meni3.pas">
+            <Form>formMeni3</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

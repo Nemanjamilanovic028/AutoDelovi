@@ -10,7 +10,8 @@ uses
   meni2 in 'meni2.pas' {formMeni2},
   detalji in 'detalji.pas' {formDetalji},
   korpa in 'korpa.pas' {formKorpa},
-  nalog in 'nalog.pas' {formNalog};
+  nalog in 'nalog.pas' {formNalog},
+  meni3 in 'meni3.pas' {formMeni3};
 
 {$R *.res}
 
@@ -24,5 +25,6 @@ begin
   Application.CreateForm(TformDetalji, formDetalji);
   Application.CreateForm(TformKorpa, formKorpa);
   Application.CreateForm(TformNalog, formNalog);
+  Application.CreateForm(TformMeni3, formMeni3);
   Application.Run;
 end.

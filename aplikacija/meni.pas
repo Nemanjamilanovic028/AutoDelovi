@@ -27,6 +27,7 @@ type
     procedure ListBox1Change(Sender: TObject);
     procedure buttonAkumulatoriClick(Sender: TObject);
     procedure Image1Click(Sender: TObject);
+    procedure buttonGumeClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,7 +39,7 @@ var
 
 implementation
 
-uses login, dm, meni2, nalog;
+uses login, dm, meni2, nalog, meni3;
 
 {$R *.fmx}
 
@@ -46,6 +47,12 @@ procedure TformMeni.buttonAkumulatoriClick(Sender: TObject);
 begin
     formMeni.hide;
     formMeni2.show;
+end;
+
+procedure TformMeni.buttonGumeClick(Sender: TObject);
+begin
+    formMeni.hide;
+    formMeni3.show;
 end;
 
 procedure TformMeni.buttonNazadClick(Sender: TObject);
